@@ -1,6 +1,7 @@
+import "./Pages.css"
 const HomePage = () =>{
     return(
-        <div>Hello</div>
+        <div className="HomePage">Hello</div>
     )
 }
 
