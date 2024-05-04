@@ -21,6 +21,10 @@ const Switch = ({theme, setTheme}) => {
         root.style.setProperty('--mobile-navigation-ul-background', '#000')
         root.style.setProperty('--mobile-navigation-a-color', '#fff')
         root.style.setProperty('--mobile-navigation-a-text-shadow-color', '#200d1b')
+        root.style.setProperty('--neon_border-color', '#fff')
+        root.style.setProperty('--neon_first_three-box-shadow-color', '#fff')
+        root.style.setProperty('--neon_last_five-box-shadow-color', '#200d1b')
+        root.style.setProperty('--text-color', '#fff')
     }else{
         root.style.setProperty('--switch-background', "rgba(155, 92, 72, 1)")
         root.style.setProperty('--switch-color', "#fff")
@@ -33,6 +37,11 @@ const Switch = ({theme, setTheme}) => {
         root.style.setProperty('--mobile-navigation-ul-background', '#fff')
         root.style.setProperty('--mobile-navigation-a-color', 'rgb(53, 48, 37)')
         root.style.setProperty('--mobile-navigation-a-text-shadow-color', 'none')
+        root.style.setProperty('--neon_border-color', 'rgba(155, 92, 72, 1)')
+        root.style.setProperty('--neon_first_three-box-shadow-color', 'none')
+        root.style.setProperty('--neon_last_five-box-shadow-color', 'none')
+        root.style.setProperty('--text-color', '#000')
+
       }
     })
     

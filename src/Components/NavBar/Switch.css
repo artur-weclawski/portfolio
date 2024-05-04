@@ -19,7 +19,7 @@
     border-radius: 80px;
     position: relative;
     background: var(--switch-background);
-    transition: background-color .2s;
+    transition: .2s;
 }
 
 

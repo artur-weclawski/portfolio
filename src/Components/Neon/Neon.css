@@ -1,0 +1,129 @@
+:root{
+    --rotateX: 0 deg;
+    --rotateY: 0 deg;
+    --neon_border-color: #fff;
+    --neon_first_three-box-shadow-color: #fff;
+    --neon_last_five-box-shadow-color: #200d1b;
+}
+
+.content-box{
+    animation: flicker-box 1s infinite alternate;  
+    width: 325px;
+    height: 250px;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin-left: 50px;
+    border: 0.7rem solid var(--neon_border-color);
+    box-shadow: 
+    0 0 4px var(--neon_first_three-box-shadow-color),
+    0 0 11px var(--neon_first_three-box-shadow-color),
+    0 0 19px var(--neon_first_three-box-shadow-color),
+    0 0 40px var(--neon_last_five-box-shadow-color),
+    0 0 80px var(--neon_last_five-box-shadow-color),
+    0 0 90px var(--neon_last_five-box-shadow-color),
+    0 0 100px var(--neon_last_five-box-shadow-color),
+    0 0 150px var(--neon_last_five-box-shadow-color);
+    position: relative;
+    transform:
+    rotateX(var(--rotateX))
+    rotateY(var(--rotateY));
+}
+.content-box::before, .content-box::after{
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+.neonText{
+    color: var(--neon_border-color);
+    text-shadow:
+      0 0 7px var(--neon_first_three-box-shadow-color),
+      0 0 10px var(--neon_first_three-box-shadow-color),
+      0 0 21px var(--neon_first_three-box-shadow-color),
+      0 0 42px var(--neon_last_five-box-shadow-color),
+      0 0 82px var(--neon_last_five-box-shadow-color),
+      0 0 92px var(--neon_last_five-box-shadow-color),
+      0 0 102px var(--neon_last_five-box-shadow-color),
+      0 0 151px var(--neon_last_five-box-shadow-color);
+}
+h1.neonText{
+  font-family: 'Righteous';
+  font-weight: 100;
+  transform: scale(1,1.6);
+  font-variant: small-caps;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 0.6rem;
+  padding-top: 2.4rem;
+}
+  /* Flickering animation */
+  @keyframes flicker-text {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px var(--neon_first_three-box-shadow-color),
+        0 0 11px var(--neon_first_three-box-shadow-color),
+        0 0 19px var(--neon_first_three-box-shadow-color),
+        0 0 40px var(--neon_last_five-box-shadow-color),
+        0 0 80px var(--neon_last_five-box-shadow-color),
+        0 0 90px var(--neon_last_five-box-shadow-color),
+        0 0 100px var(--neon_last_five-box-shadow-color),
+        0 0 150px var(--neon_last_five-box-shadow-color);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  @keyframes flicker-box {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        box-shadow:
+        0 0 4px var(--neon_first_three-box-shadow-color),
+        0 0 11px var(--neon_first_three-box-shadow-color),
+        0 0 19px var(--neon_first_three-box-shadow-color),
+        0 0 40px var(--neon_last_five-box-shadow-color),
+        0 0 80px var(--neon_last_five-box-shadow-color),
+        0 0 90px var(--neon_last_five-box-shadow-color),
+        0 0 100px var(--neon_last_five-box-shadow-color),
+        0 0 150px var(--neon_last_five-box-shadow-color),
+        intent 0 0 4px var(--neon_first_three-box-shadow-color),
+        intent 0 0 11px var(--neon_first_three-box-shadow-color),
+        intent 0 0 19px var(--neon_first_three-box-shadow-color),
+        intent 0 0 40px var(--neon_last_five-box-shadow-color),
+        intent 0 0 80px var(--neon_last_five-box-shadow-color),
+        intent 0 0 90px var(--neon_last_five-box-shadow-color),
+        intent 0 0 100px var(--neon_last_five-box-shadow-color),
+        intent 0 0 150px ;
+    }
+    
+    20%, 24%, 55% {  
+        box-shadow: none;
+    }    
+  }
+@media only screen and (max-width: 1080px){
+    .content-box{
+	    animation: none;
+        transform: rotateX('0 deg')
+        rotateY('0 deg');
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (min-height:1920px){
+  .content-box{
+        animation: none;
+        transform: rotateX('0 deg')
+        rotateY('0 deg');
+        width: 50%;
+        height: 360px;
+  }
+  
+  h1.neonText{
+        padding-top: 4.5rem;
+  }
+}
