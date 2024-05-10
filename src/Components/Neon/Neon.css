@@ -11,9 +11,8 @@
     width: 325px;
     height: 250px;
     border-radius: 1rem 1rem 1rem 1rem;
-    margin-left: 50px;
     border: 0.7rem solid var(--neon_border-color);
-    box-shadow: 
+    /* box-shadow: 
     0 0 4px var(--neon_first_three-box-shadow-color),
     0 0 11px var(--neon_first_three-box-shadow-color),
     0 0 19px var(--neon_first_three-box-shadow-color),
@@ -21,12 +20,13 @@
     0 0 80px var(--neon_last_five-box-shadow-color),
     0 0 90px var(--neon_last_five-box-shadow-color),
     0 0 100px var(--neon_last_five-box-shadow-color),
-    0 0 150px var(--neon_last_five-box-shadow-color);
+    0 0 150px var(--neon_last_five-box-shadow-color); */
     position: relative;
     transform:
-    rotateX(var(--rotateX))
-    rotateY(var(--rotateY));
+      rotateX(var(--rotateX))
+      rotateY(var(--rotateY));
 }
+
 .content-box::before, .content-box::after{
   content: "";
   position: absolute;
@@ -42,7 +42,7 @@
       0 0 82px var(--neon_last_five-box-shadow-color),
       0 0 92px var(--neon_last_five-box-shadow-color),
       0 0 102px var(--neon_last_five-box-shadow-color),
-      0 0 151px var(--neon_last_five-box-shadow-color);
+      0 0 150px var(--neon_last_five-box-shadow-color);
 }
 h1.neonText{
   font-family: 'Righteous';
@@ -50,6 +50,7 @@ h1.neonText{
   transform: scale(1,1.6);
   font-variant: small-caps;
   font-size: 3.5rem;
+  animation: flicker-text 1.5s infinite alternate;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,55 +59,43 @@ h1.neonText{
   padding-top: 2.4rem;
 }
   /* Flickering animation */
-  @keyframes flicker-text {
+@keyframes flicker-text {
       
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-        text-shadow:
-        0 0 4px var(--neon_first_three-box-shadow-color),
-        0 0 11px var(--neon_first_three-box-shadow-color),
-        0 0 19px var(--neon_first_three-box-shadow-color),
-        0 0 40px var(--neon_last_five-box-shadow-color),
-        0 0 80px var(--neon_last_five-box-shadow-color),
-        0 0 90px var(--neon_last_five-box-shadow-color),
-        0 0 100px var(--neon_last_five-box-shadow-color),
-        0 0 150px var(--neon_last_five-box-shadow-color);
-    
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+      0 0 4px var(--neon_first_three-box-shadow-color),
+      0 0 11px var(--neon_first_three-box-shadow-color),
+      0 0 19px var(--neon_first_three-box-shadow-color),
+      0 0 40px var(--neon_last_five-box-shadow-color),
+      0 0 80px var(--neon_last_five-box-shadow-color),
+      0 0 90px var(--neon_last_five-box-shadow-color),
+      0 0 100px var(--neon_last_five-box-shadow-color),
+      0 0 150px var(--neon_last_five-box-shadow-color);  
   }
-  @keyframes flicker-box {
-      
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        box-shadow:
-        0 0 4px var(--neon_first_three-box-shadow-color),
-        0 0 11px var(--neon_first_three-box-shadow-color),
-        0 0 19px var(--neon_first_three-box-shadow-color),
-        0 0 40px var(--neon_last_five-box-shadow-color),
-        0 0 80px var(--neon_last_five-box-shadow-color),
-        0 0 90px var(--neon_last_five-box-shadow-color),
-        0 0 100px var(--neon_last_five-box-shadow-color),
-        0 0 150px var(--neon_last_five-box-shadow-color),
-        intent 0 0 4px var(--neon_first_three-box-shadow-color),
-        intent 0 0 11px var(--neon_first_three-box-shadow-color),
-        intent 0 0 19px var(--neon_first_three-box-shadow-color),
-        intent 0 0 40px var(--neon_last_five-box-shadow-color),
-        intent 0 0 80px var(--neon_last_five-box-shadow-color),
-        intent 0 0 90px var(--neon_last_five-box-shadow-color),
-        intent 0 0 100px var(--neon_last_five-box-shadow-color),
-        intent 0 0 150px ;
-    }
     
-    20%, 24%, 55% {  
-        box-shadow: none;
-    }    
-  }
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+@keyframes flicker-box {    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      box-shadow:
+      0 0 4px var(--neon_first_three-box-shadow-color),
+      0 0 11px var(--neon_first_three-box-shadow-color),
+      0 0 19px var(--neon_first_three-box-shadow-color),
+      0 0 40px var(--neon_last_five-box-shadow-color),
+      0 0 80px var(--neon_last_five-box-shadow-color),
+      0 0 90px var(--neon_last_five-box-shadow-color),
+      0 0 100px var(--neon_last_five-box-shadow-color);
+    }   
+  20%, 24%, 55% {  
+      box-shadow: none;
+  }      
+}
 @media only screen and (max-width: 1080px){
     .content-box{
-	    animation: none;
+	      /* animation: none; */
         transform: rotateX('0 deg')
         rotateY('0 deg');
         margin-left: 0px;
@@ -116,7 +105,7 @@ h1.neonText{
 
 @media only screen and (min-height:1920px){
   .content-box{
-        animation: none;
+        /* animation: none; */
         transform: rotateX('0 deg')
         rotateY('0 deg');
         width: 50%;

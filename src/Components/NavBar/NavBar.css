@@ -11,10 +11,11 @@
     --mobile-navigation-ul-background: #000; /*add #fff*/
     --mobile-navigation-a-color: #fff; /*add rgb(53, 48, 37)*/
     --mobile-navigation-a-text-shadow-color: #200d1b /*add none*/;
+    --mobile-navigation-a-hover-text-shadow-color: #fff /*add none*/;
 }
 .NavBar {
     width: 100%;
-    height: 80px;
+    height: 5rem;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -31,10 +32,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 5rem;
     text-decoration: none;
     height: 100%;
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 
 .NavBar .Navigation .NavLinks{
@@ -42,8 +43,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 10px;
-    height: 80px;
+    margin-right: 1rem;
+    height: 5rem;
 }
 
 .NavBar .Navigation .NavLinks ul{
@@ -60,19 +61,23 @@
     width: 100%;
 }
 .NavBar .Navigation .NavLinks ul .li-Switch{
+    display: block;
     height: inherit;
     width: 50%;
 }
-.NavBar .MobileNavigation .NavLinks ul .li-Switch .Switch{
-    margin-right: 30px;
+.NavBar .MobileNavigation .NavLinks ul .li-Switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .NavBar .Navigation .NavLinks ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
     text-decoration: none;
-    height: 80px;
+    height: 5rem;
     font-family: 'Bungee Hairline';
     font-weight: bold;
     font-variant: small-caps;
@@ -86,13 +91,11 @@
 }
 .Switch{
     display: flex;
-    position: absolute;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 5rem;
     text-decoration: none;
-    height: 80px;
-    right: 0;
+    height: 5rem;
 
 }
 
@@ -113,7 +116,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 5rem;
     position: fixed;
     display: none;
 }
@@ -126,9 +129,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 5rem;
     text-decoration: none;
-    height: 80px;
+    height: 5rem;
 }
 
 .NavBar .MobileNavigation > .MobileNavigation-icon{
@@ -147,7 +150,7 @@
 
 .NavBar .MobileNavigation ul li {
     display: inline-block;
-    height: 80px;
+    height: 5rem;
     margin-bottom: 3px;
   }
   
@@ -157,7 +160,7 @@
     align-items: center;
     width: 100%;
     text-decoration: none;
-    height: 80px;
+    height: 5rem;
     font-family: 'Bungee Hairline';
     font-weight: bold;
     font-variant: small-caps;
@@ -172,7 +175,7 @@
 
 .NavBar .MobileNavigation a:hover{
     border-bottom: var(--a-hover-border-bottom) solid;
-    text-shadow: 0px 0px 20px var(--a-hover-border-bottom);
+    text-shadow: 0px 0px 20px var(--mobile-navigation-a-hover-text-shadow-color);
 }
 
 .NavBar .MobileNavigation p{
@@ -191,6 +194,7 @@
     transform: scale(3);
     color: var(--a-hover-border-bottom);
 }
+
 @media only screen and (max-width: 1080px){
     .NavBar .Navigation {
         display: none;
@@ -211,7 +215,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 80px;
+        top: 5rem;
         right: 0;
         width: 30%;
     }
