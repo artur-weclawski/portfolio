@@ -2,17 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/terminal.css');
-:root{
-    --navbar-background: #000; /*add #fff*/
-    --a-hover-border-bottom: #fff; /*add rgba(155, 92, 72, 1)*/
-    --a-hover-text-shadow-color: #ce54ad; /*add none*/
-    --mobile-navigation-backgroud: #000; /*add #fff*/
-    --mobile-navigation-color: #fff; /*add rgba(155, 92, 72, 1)*/
-    --mobile-navigation-ul-background: #000; /*add #fff*/
-    --mobile-navigation-a-color: #fff; /*add rgb(53, 48, 37)*/
-    --mobile-navigation-a-text-shadow-color: #200d1b /*add none*/;
-    --mobile-navigation-a-hover-text-shadow-color: #fff /*add none*/;
-}
 .NavBar {
     width: 100%;
     height: 5rem;
@@ -98,7 +87,6 @@
     height: 5rem;
 
 }
-
 .NavBar .Navigation a:hover{
     border-bottom: var(--a-hover-border-bottom) solid;
     text-shadow: 0px 0px 20px var(--a-hover-text-shadow-color);
@@ -190,6 +178,7 @@
     box-shadow: inset 0px 0px 5px 2px var(--mobile-navigation-a-text-shadow-color),
                 0px 0px 5px 2px var(--mobile-navigation-a-text-shadow-color);
 }
+
 .gg-menu{
     transform: scale(3);
     color: var(--a-hover-border-bottom);

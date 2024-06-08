@@ -13,7 +13,7 @@ const GradientContainer = styled.div`
 `;
 
 const GradientBackground = () => {
-    const [background, setBackground] = useState('');
+    const [background, setBackground] = useState('linear-gradient(#000, #000 33%, #200d1b 100%);');
 
     useEffect(() => {
         const observer = new MutationObserver(() => setBackground(getComputedStyle(document.documentElement).getPropertyValue('--body-background')));

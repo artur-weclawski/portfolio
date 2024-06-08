@@ -1,5 +1,41 @@
 :root{
+    --switch-background: #200d1b;
+    --switch-color: #000;
     --body-background: linear-gradient(#000, #000 33%, #200d1b 100%);
+    --navbar-background: #000; /*add #fff*/
+    --a-hover-border-bottom: #fff; /*add rgba(155, 92, 72, 1)*/
+    --a-hover-text-shadow-color: #ce54ad; /*add none*/
+    --mobile-navigation-backgroud: #000; /*add #fff*/
+    --mobile-navigation-color: #fff; /*add rgba(155, 92, 72, 1)*/
+    --mobile-navigation-ul-background: #000; /*add #fff*/
+    --mobile-navigation-a-color: #fff; /*add rgb(53, 48, 37)*/
+    --mobile-navigation-a-text-shadow-color: #200d1b /*add none*/;
+    --mobile-navigation-a-hover-text-shadow-color: #fff /*add none*/;
+    --neon_border-color: #fff;
+    --neon_first_three-box-shadow-color: #fff;
+    --neon_last_five-box-shadow-color: #200d1b;
+    --text-color: #fff;
+    --rotateX: 0 deg;
+    --rotateY: 0 deg;
+
+}
+.light{
+    --switch-background: rgba(155, 92, 72, 1);
+    --switch-color: #fff;
+    --body-background: linear-gradient(#fff, #fff 10%, #817b5b);
+    --navbar-background: #fff;
+    --a-hover-border-bottom: rgba(155, 92, 72, 1);
+    --a-hover-text-shadow-color: rgba(1, 1, 1, 0);
+    --mobile-navigation-background: #fff;
+    --mobile-navigation-color: rgba(155, 92, 72, 1);
+    --mobile-navigation-ul-background: #fff;
+    --mobile-navigation-a-color: rgb(53, 48, 37);
+    --mobile-navigation-a-text-shadow-color: "";
+    --mobile-navigation-a-hover-text-shadow-color: "";
+    --neon_border-color: rgba(155, 92, 72, 1);
+    --neon_first_three-box-shadow-color: none;
+    --neon_last_five-box-shadow-color: none;
+    --text-color: #000;
 }
 body{
     margin: 0;

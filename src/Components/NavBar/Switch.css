@@ -1,8 +1,3 @@
-:root{
-    --switch-background: #200d1b;
-    --switch-color: #000;
-}
-
 .react-switch-checkbox {
     height: 0;
     width: 0;
