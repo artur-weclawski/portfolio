@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7be90584.css",
-    "main.js": "/portfolio/static/js/main.5186a050.js",
+    "main.css": "/portfolio/static/css/main.121670a6.css",
+    "main.js": "/portfolio/static/js/main.d1c3de12.js",
+    "static/media/Artur_Weclawski_CV.pdf": "/portfolio/static/media/Artur_Weclawski_CV.7eab8aac01dfdc9c0927.pdf",
     "index.html": "/portfolio/index.html",
-    "main.7be90584.css.map": "/portfolio/static/css/main.7be90584.css.map",
-    "main.5186a050.js.map": "/portfolio/static/js/main.5186a050.js.map"
+    "main.121670a6.css.map": "/portfolio/static/css/main.121670a6.css.map",
+    "main.d1c3de12.js.map": "/portfolio/static/js/main.d1c3de12.js.map"
   },
   "entrypoints": [
-    "static/css/main.7be90584.css",
-    "static/js/main.5186a050.js"
+    "static/css/main.121670a6.css",
+    "static/js/main.d1c3de12.js"
   ]
 }
