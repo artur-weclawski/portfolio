@@ -21,6 +21,7 @@
     --slide-span-background-1: #38172f;
     --slide-span-background-2: #461d3b;
     --slide-span-background-3: #ce54ae;
+    --dots-active-color: #ce54ae;
 
 }
 .light{
@@ -44,6 +45,7 @@
     --slide-span-background-1: rgb(206, 160, 145);
     --slide-span-background-2: rgb(194, 129, 109);
     --slide-span-background-3: rgb(155, 92, 72);
+    --dots-active-color: #fff;
 }
 body{
     margin: 0;

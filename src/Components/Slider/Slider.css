@@ -10,7 +10,7 @@
     border-radius: 5px;
     position: relative;
     display: inline-block;
-    transition: 0.5s;
+    transition: 0.3s;
     overflow: hidden;
     background: var(--slide-background);
 }
@@ -145,4 +145,8 @@
     cursor: pointer;
     font-size: 40px;
     color: var(--neon_border-color);
+}
+
+.dots.active{
+    color: var(--dots-active-color);
 }
