@@ -8,6 +8,15 @@
     grid-template-rows: 1.5fr 2fr;
     grid-gap: 0px;
 }
+.Projects{
+  padding-top: 80px;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  color: var(--text-color);
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 2fr;
+}
 .content-box{ 
     grid-area: 1 / 1 / 2 / 2; 
     align-self: center;

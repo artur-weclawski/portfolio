@@ -1,0 +1,148 @@
+.slider {
+    width: 100%;
+    height: 640px;
+    margin: 0;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+    overflow: hidden;
+    background: var(--slide-background);
+}
+.slide span {
+    position: absolute;
+    display: block;
+}
+
+.slide span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent 0%, var(--slide-span-background-1) 33%, var(--slide-span-background-2) 66%, var(--slide-span-background-3) 100%);
+    animation: animate1 16s linear infinite;
+}
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.slide span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 0%, var(--slide-span-background-1) 33%, var(--slide-span-background-2) 66%, var(--slide-span-background-3) 100%);
+    animation: animate2 16s linear 4s infinite;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.slide span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent 0%, var(--slide-span-background-1) 33%, var(--slide-span-background-2) 66%, var(--slide-span-background-3) 100%);
+    animation: animate3 16s linear 8s infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.slide span:nth-child(4) {
+    bottom: 50%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent 0%, var(--slide-span-background-1) 33%, var(--slide-span-background-2) 66%, var(--slide-span-background-3) 100%);
+    animation: animate4 16s linear 12s infinite,
+    animate45 12s linear
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+@keyframes animate45 {
+    0% {
+        bottom: 0%;
+    }
+    50%,
+    100%{
+        bottom: 150%;
+    }
+}
+.sliderContainer {
+    height: 100%;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.leftArrow {
+    font-family: 'Righteous';
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%) scale(1.1, 1.2);
+    left: 16px;
+    font-size: 60px;
+    color: var(--neon_border-color);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.rightArrow {
+    font-family: 'Righteous';
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%) scale(1.1, 1.2);
+    right: 16px;
+    font-size: 60px;
+    color: var(--neon_border-color);
+    z-index: 1;
+    cursor: pointer;
+}
+.dotsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.dots {
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 40px;
+    color: var(--neon_border-color);
+}

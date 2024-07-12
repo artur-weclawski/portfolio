@@ -17,6 +17,10 @@
     --text-color: #fff;
     --rotateX: 0 deg;
     --rotateY: 0 deg;
+    --slide-background: rgb(24, 9, 20);
+    --slide-span-background-1: #38172f;
+    --slide-span-background-2: #461d3b;
+    --slide-span-background-3: #ce54ae;
 
 }
 .light{
@@ -36,6 +40,10 @@
     --neon_first_three-box-shadow-color: none;
     --neon_last_five-box-shadow-color: none;
     --text-color: #000;
+    --slide-background: rgb(199, 196, 179);
+    --slide-span-background-1: rgb(206, 160, 145);
+    --slide-span-background-2: rgb(194, 129, 109);
+    --slide-span-background-3: rgb(155, 92, 72);
 }
 body{
     margin: 0;
