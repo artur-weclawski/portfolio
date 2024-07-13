@@ -14,8 +14,8 @@
   min-height: calc(100vh - 80px);
   color: var(--text-color);
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 .content-box{ 
     grid-area: 1 / 1 / 2 / 2; 
@@ -40,7 +40,7 @@
     font-size: 30px;
   }
    */
-.BsGithub, .FaLinkedin, .SiMaildotru, .BsFileEarmarkPerson{
+.links .BsGithub, .links .FaLinkedin, .links .SiMaildotru, .links .BsFileEarmarkPerson{
   color: var(--a-hover-border-bottom);
   width: 15rem;
   height: 15rem;

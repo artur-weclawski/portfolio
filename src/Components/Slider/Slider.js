@@ -33,7 +33,11 @@ const Slider = ({ slides }) => {
             
             <div className="dotsContainer">
                 {slides.map((slide, slideIndex)=>(
-                    <div key = {slideIndex} className={`dots ${slideIndex === currentIndex ? 'active' : ''}`} onClick={()=>goToSlide(slideIndex)}>.</div>
+                    <div 
+                            key = {slideIndex} 
+                            className={`dots ${slideIndex === currentIndex ? 'active' : ''}`} 
+                            onClick={()=>goToSlide(slideIndex)}>.
+                    </div>
                 ))}
             </div>
         </div>

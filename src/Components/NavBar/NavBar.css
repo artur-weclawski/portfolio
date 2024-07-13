@@ -87,9 +87,10 @@
     height: 5rem;
 
 }
-.NavBar .Navigation a:hover{
+.NavBar .Navigation :not(:first-child) a:hover{
     border-bottom: var(--a-hover-border-bottom) solid;
     text-shadow: 0px 0px 20px var(--a-hover-text-shadow-color);
+    text-decoration: none;
 }
 
 .NavBar .Navigation p{
