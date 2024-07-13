@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6a6a7c53.css",
-    "main.js": "/portfolio/static/js/main.78637cad.js",
+    "main.css": "/portfolio/static/css/main.889aae4b.css",
+    "main.js": "/portfolio/static/js/main.a132cdbd.js",
     "static/media/yeet_home_page.png": "/portfolio/static/media/yeet_home_page.3f4b64b409034d54d20c.png",
     "static/media/unconquered_fortress_menu.png": "/portfolio/static/media/unconquered_fortress_menu.cc2eafeaa871227c61ab.png",
-    "static/media/Artur_Weclawski_CV.pdf": "/portfolio/static/media/Artur_Weclawski_CV.7eab8aac01dfdc9c0927.pdf",
+    "static/media/Artur_Weclawski_CV.pdf": "/portfolio/static/media/Artur_Weclawski_CV.e9b2d2f99bc7a0b0f81b.pdf",
     "index.html": "/portfolio/index.html",
-    "main.6a6a7c53.css.map": "/portfolio/static/css/main.6a6a7c53.css.map",
-    "main.78637cad.js.map": "/portfolio/static/js/main.78637cad.js.map"
+    "main.889aae4b.css.map": "/portfolio/static/css/main.889aae4b.css.map",
+    "main.a132cdbd.js.map": "/portfolio/static/js/main.a132cdbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a6a7c53.css",
-    "static/js/main.78637cad.js"
+    "static/css/main.889aae4b.css",
+    "static/js/main.a132cdbd.js"
   ]
 }
