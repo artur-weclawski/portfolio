@@ -23,6 +23,7 @@
     --slide-span-background-3: #ce54ae;
     --card-description-background: rgb(20, 8, 18);
     --card-box-shadow: #38172f;
+    --projects-img-box-shadow: #7e3169;
 }
 .light{
     --switch-background: rgba(155, 92, 72, 1);
@@ -47,6 +48,7 @@
     --slide-span-background-3: rgb(155, 92, 72);
     --card-description-background: rgb(221, 219, 204);
     --card-box-shadow: rgba(155, 91, 72, 0.7);
+    --projects-img-box-shadow: #000;
 }
 
 body{

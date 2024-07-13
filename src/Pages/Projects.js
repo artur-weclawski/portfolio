@@ -2,10 +2,11 @@ import Slider from "../Components/Slider/Slider";
 import "../Components/Cards/Cards.css"
 import unconqueredFortress from "../Components/Cards/gameIcon.png"
 import { BsGithub } from "react-icons/bs"
+import unconqueredFortressMenu from "../Components/Slider/unconquered_fortress_menu.png"
+import yeetHomePage from "../Components/Slider/yeet_home_page.png"
 const Projects = () =>{
-    const slides = [{url: "", title: "image-1"},
-        {url: "", title: "image-2"},
-        {url: "", title: "image-3"}
+    const slides = [{image: unconqueredFortressMenu, title: "Unconquered Fortress", description: "A Tower Defense game created for engineering thesis. Procedurally generated levels, cloud saving, many unique enemies and defense towers. And of course, a passive tree straight from roguelike game. Game was created in Java with LibGDX framework from scratch with own graphics, physics engine and much more. Credits to @zomsik for making official repository on github."},
+        {image: yeetHomePage, title: "Yeet - web page", description: "Web page with memes created as college project. Frontend written in React.js and backend in Java Spring. For frontend was used MUI: React component library. As user you can create, edit and delete your account as well as posts and score them."}
     ]
     return(
         <div className="Projects">

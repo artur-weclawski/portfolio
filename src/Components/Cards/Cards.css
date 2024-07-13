@@ -10,6 +10,7 @@
 .card{
     margin-top: 80px;
     background: var(--slide-background);
+    transition: 0.3s;
     width: 380px;
     height: 520px;
     border-radius: 5px;
