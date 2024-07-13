@@ -54,5 +54,8 @@
 body{
     margin: 0;
     padding: 0;
-    background: none
+    background: none;
+}
+::-webkit-scrollbar{
+    width: 0px;
 }
