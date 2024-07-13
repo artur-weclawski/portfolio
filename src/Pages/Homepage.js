@@ -4,12 +4,26 @@ import { FaLinkedin } from "react-icons/fa";
 import { SiMaildotru } from "react-icons/si";
 import { BsGithub, BsFileEarmarkPerson} from "react-icons/bs"
 import pdf from "../Artur_Weclawski_CV.pdf"
+import { ReactTyped } from "react-typed";
 const HomePage = () =>{
     return(
         <div className="HomePage">
             <Neon />
             <div className="description">
-            Work in progress.
+                <h1>
+                Hi, I'm {" "}
+                <ReactTyped 
+                    strings={["Artur.", "programmer.", "developer.","amateur artist."]}
+                    typeSpeed={80}
+                    loop
+                    backSpeed={100}
+                    cursorChar="|"
+                    showCursor={true}
+                />
+                </h1>
+                <p>
+                    WIP
+                </p>
             </div>
             <div className="links">
             <a href = "https://github.com/artur-weclawski" target="_blank"><BsGithub className='BsGithub'/></a>
