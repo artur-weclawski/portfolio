@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6a6a7c53.css",
-    "main.js": "/portfolio/static/js/main.9e77d869.js",
+    "main.js": "/portfolio/static/js/main.78637cad.js",
     "static/media/yeet_home_page.png": "/portfolio/static/media/yeet_home_page.3f4b64b409034d54d20c.png",
     "static/media/unconquered_fortress_menu.png": "/portfolio/static/media/unconquered_fortress_menu.cc2eafeaa871227c61ab.png",
     "static/media/Artur_Weclawski_CV.pdf": "/portfolio/static/media/Artur_Weclawski_CV.7eab8aac01dfdc9c0927.pdf",
     "index.html": "/portfolio/index.html",
     "main.6a6a7c53.css.map": "/portfolio/static/css/main.6a6a7c53.css.map",
-    "main.9e77d869.js.map": "/portfolio/static/js/main.9e77d869.js.map"
+    "main.78637cad.js.map": "/portfolio/static/js/main.78637cad.js.map"
   },
   "entrypoints": [
     "static/css/main.6a6a7c53.css",
-    "static/js/main.9e77d869.js"
+    "static/js/main.78637cad.js"
   ]
 }
