@@ -22,7 +22,13 @@ const HomePage = () =>{
                 />
                 </h1>
                 <p>
-                    WIP
+                Description under maintenance
+                <ReactTyped
+                    strings={["..."]}
+                    typeSpeed={120}
+                    loop
+                    showCursor={false}
+                />
                 </p>
             </div>
             <div className="links">
