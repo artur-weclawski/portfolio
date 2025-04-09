@@ -48,9 +48,8 @@ const Projects = () =>{
 
                             (Note: The SQL database files used in XAMPP might be lost.)
                         </p>
-                        <div className="card-links">
-                            <a href="https://github.com/artur-weclawski/yeet-frontend" target="_blank" rel="noreferrer" title="Frontend"><BsGithub className='BsGithub'/></a>
-                            <a href="https://github.com/artur-weclawski/yeet_backend" target="_blank" rel="noreferrer" title="Backend"><BsGithub className='BsGithub'/></a>
+                        <div className="card-links-one">
+                            <a href="https://github.com/artur-weclawski/yeet" target="_blank" rel="noreferrer" title="Yeet - Web App"><BsGithub className='BsGithub'/></a>
                         </div>
                     </div>
                 </div>
