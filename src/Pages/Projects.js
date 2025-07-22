@@ -26,11 +26,9 @@ const Projects = () =>{
                             It features procedurally generated levels, cloud saving, many unique enemies, and defense towers. 
                             Additionally, it includes a passive tree inspired by roguelike games. 
                             The game was developed in Java using the LibGDX framework from scratch, with original graphics, a custom physics engine, and much more. 
-                            Credits to @zomsik for creating the official repository on GitHub.
                         </p>
-                        <div className="card-links">
-                            <a href="https://github.com/artur-weclawski/Projekt_Game" target="_blank" rel="noreferrer" title="Original repository."><BsGithub className='BsGithub'/></a>
-                            <a href="https://github.com/zomsik/Unconquered-Fortress" target="_blank" rel="noreferrer" title="Repository fixed by @zomsik."><BsGithub className='BsGithub'/></a>
+                        <div className="card-links-one">
+                            <a href="https://github.com/artur-weclawski/UnconqueredFortress" target="_blank" rel="noreferrer" title="Original repository."><BsGithub className='BsGithub'/></a>
                         </div>
                     </div>
                 </div>
@@ -99,6 +97,24 @@ const Projects = () =>{
                         </p>
                         <div className="card-links-one">
                             <a href="https://github.com/artur-weclawski/MasterAnd" target="_blank" rel="noreferrer" title="Original repository."><BsGithub className='BsGithub'/></a>
+                        </div>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-image">
+                        <h2 style={{fontFamily:'Bungee Hairline', fontWeight:'bold', fontVariant: 'small-caps'}}>Better Meta Chat</h2>
+                        <p style={{fontFamily:'Bungee Hairline', fontWeight:'bold', fontSize: '3.5rem'}}>Browser Extension</p>
+                    </div>
+                    <div className="card-description">
+                        <h2 style={{fontFamily:'Bungee Hairline', fontWeight:'bold', fontVariant: 'small-caps'}}>Better Meta Chat</h2>
+                        <p>
+                            Extension to chrome based browsers adding emotes to Meta communicators.
+                            This project is inspired by BetterTTV and 7tv (extensions to Twitch).
+                            Extension replaces text with emotes from 7tv.
+                            Thanks to identical chat structure it works on Facebook, Messenger and Instagram.
+                        </p>
+                        <div className="card-links-one">
+                            <a href="https://github.com/artur-weclawski/BetterMetaChat" target="_blank" rel="noreferrer" title="Original repository."><BsGithub className='BsGithub'/></a>
                         </div>
                     </div>
                 </div>

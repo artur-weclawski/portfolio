@@ -9,7 +9,7 @@ const MobileNavigation = ({theme, setTheme}) => {
             <div  className='MobileNavigation-icon' onClick={() => setOpen(!open)}>
                 <i className="gg-menu"></i>
             </div>
-        {open && <NavLinks theme={theme} setTheme={setTheme}/>}
+        {open && <NavLinks theme={theme} setTheme={setTheme}  switchId="mobile-navigation-switch"/>}
         </div>
     );
 }

@@ -1,7 +1,8 @@
 :root{
     --switch-background: #200d1b;
     --switch-color: #000;
-    --body-background: linear-gradient(#000, #000 33%, #200d1b 100%);
+    /* --body-background: linear-gradient(#000, #000 33%, #200d1b 100%);      */
+    --body-background: linear-gradient(#030003 20%, #0f030a 80%);
     --navbar-background: #000; /*add #fff*/
     --a-hover-border-bottom: #fff; /*add rgba(155, 92, 72, 1)*/
     --a-hover-text-shadow-color: #ce54ad; /*add none*/

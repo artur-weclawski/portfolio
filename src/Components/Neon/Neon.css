@@ -17,6 +17,9 @@
     transform:
       rotateX(var(--rotateX))
       rotateY(var(--rotateY));
+      display: flex;
+      align-items: center;
+      justify-content: center;
 }
 
 .content-box::before, .content-box::after{
@@ -47,8 +50,6 @@ h1.neonText{
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-right: 0.6rem;
-  padding-top: 2.4rem;
 }
   /* Flickering animation */
 @keyframes flicker-text {
@@ -102,9 +103,5 @@ h1.neonText{
         rotateY('0 deg');
         width: 50%;
         height: 360px;
-  }
-  
-  h1.neonText{
-        padding-top: 4.5rem;
   }
 }

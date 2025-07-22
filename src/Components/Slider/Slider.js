@@ -18,7 +18,6 @@ const Slider = ({ slides }) => {
     const goToSlide = (slideIndex) =>{
         setCurrentIndex(slideIndex);
     }
-    console.log([slides[0].image])
     return(
         <div className="sliderContainer">
             <div className="leftArrow" onClick={goToPrevious}> &lt; </div>
@@ -29,7 +28,7 @@ const Slider = ({ slides }) => {
                 <span></span>
                 <span></span>
                 <div className="content">
-                    <img src={[slides[currentIndex].image]}/>
+                    <img src={[slides[currentIndex].image]} alt=""/>
                     <div className="description">
                         <h2>
                             {slides[currentIndex].title}
