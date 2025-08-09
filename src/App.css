@@ -1,14 +1,14 @@
 :root{
-    --switch-background: #200d1b;
-    --switch-color: #000;
+    --switch-background: #39122acc;
+    --switch-color: #030003;
     /* --body-background: linear-gradient(#000, #000 33%, #200d1b 100%);      */
-    --body-background: linear-gradient(#030003 20%, #0f030a 80%);
-    --navbar-background: #000; /*add #fff*/
+    --body-background: linear-gradient(#030003 20%, hsl(325, 67%, 4%) 80%);
+    --navbar-background: #030003; /*add #fff*/
     --a-hover-border-bottom: #fff; /*add rgba(155, 92, 72, 1)*/
     --a-hover-text-shadow-color: #ce54ad; /*add none*/
-    --mobile-navigation-backgroud: #000; /*add #fff*/
+    --mobile-navigation-backgroud: #030003; /*add #fff*/
     --mobile-navigation-color: #fff; /*add rgba(155, 92, 72, 1)*/
-    --mobile-navigation-ul-background: #000; /*add #fff*/
+    --mobile-navigation-ul-background: #030003; /*add #fff*/
     --mobile-navigation-a-color: #fff; /*add rgb(53, 48, 37)*/
     --mobile-navigation-a-text-shadow-color: #200d1b /*add none*/;
     --mobile-navigation-a-hover-text-shadow-color: #fff /*add none*/;

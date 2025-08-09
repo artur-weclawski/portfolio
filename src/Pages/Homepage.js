@@ -1,8 +1,8 @@
 import Neon from "../Components/Neon/Neon";
 import "./Pages.css"
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaDatabase } from "react-icons/fa";
 import { SiMaildotru } from "react-icons/si";
-import { BsGithub, BsFileEarmarkPerson, BsDatabase} from "react-icons/bs"
+import { BsGithub, BsFileEarmarkPerson} from "react-icons/bs"
 import { IoLogoJavascript } from "react-icons/io5";
 import { IoLogoCss3,IoLogoHtml5  } from "react-icons/io";
 import { RiReactjsLine } from "react-icons/ri";
@@ -19,8 +19,8 @@ const HomePage = () =>{
         }
         function addAnimation(){
             scrollers.forEach(scroller =>{
-                scroller.setAttribute("data-animated", true);
                 const scrollerInner = scroller.querySelector('.scroller-inner');
+                if(scrollerInner.children.length > 7) return;
                 const scrollerContent = Array.from(scrollerInner.children);
                 scrollerContent.forEach(item =>{
                     const duplicatedItem = item.cloneNode(true);
@@ -70,7 +70,7 @@ const HomePage = () =>{
                         <li><SiSpringboot className="scroller-icon" style={{marginRight: "5px"}}/>SpringBoot</li>
                         <li><IoLogoHtml5 className="scroller-icon"/>HTML</li>
                         <li><IoLogoCss3 className="scroller-icon"/>CSS</li>
-                        <li><BsDatabase className="scroller-icon"/>SQL</li>
+                        <li><FaDatabase className="scroller-icon"/>SQL</li>
                     </ul>
             </div>
         </div>

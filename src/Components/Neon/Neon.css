@@ -4,7 +4,7 @@
     height: 250px;
     border-radius: 1rem 1rem 1rem 1rem;
     border: 0.7rem solid var(--neon_border-color);
-    box-shadow: 
+    /* box-shadow: 
     0 0 4px var(--neon_first_three-box-shadow-color),
     0 0 11px var(--neon_first_three-box-shadow-color),
     0 0 19px var(--neon_first_three-box-shadow-color),
@@ -12,7 +12,7 @@
     0 0 80px var(--neon_last_five-box-shadow-color),
     0 0 90px var(--neon_last_five-box-shadow-color),
     0 0 100px var(--neon_last_five-box-shadow-color),
-    0 0 150px var(--neon_last_five-box-shadow-color);
+    0 0 150px var(--neon_last_five-box-shadow-color); */
     position: relative;
     transform:
       rotateX(var(--rotateX))
@@ -29,7 +29,7 @@
 }
 .neonText{
     color: var(--neon_border-color);
-    text-shadow:
+    /* text-shadow:
       0 0 7px var(--neon_first_three-box-shadow-colorc),
       0 0 10px var(--neon_first_three-box-shadow-color),
       0 0 21px var(--neon_first_three-box-shadow-color),
@@ -37,7 +37,7 @@
       0 0 82px var(--neon_last_five-box-shadow-color),
       0 0 92px var(--neon_last_five-box-shadow-color),
       0 0 102px var(--neon_last_five-box-shadow-color),
-      0 0 150px var(--neon_last_five-box-shadow-color);
+      0 0 150px var(--neon_last_five-box-shadow-color); */
 }
 h1.neonText{
   font-family: 'Righteous';
@@ -45,11 +45,14 @@ h1.neonText{
   transform: scale(1,1.6);
   font-variant: small-caps;
   font-size: 3.5rem;
-  animation: flicker-text 1.5s infinite alternate;
+  /* animation: flicker-text 1.5s infinite alternate; */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
   /* Flickering animation */
 @keyframes flicker-text {
