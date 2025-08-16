@@ -1,20 +1,17 @@
-import Switch from "./Switch";
-import './Switch.css';
 import './NavBar.css';
-import { Link } from "react-router-dom";
-
-const NavLinks = ({theme, setTheme, switchId}) => {
+import Link from "../Link/Link";
+const NavLinks = () => {
     return(
         <nav className="NavLinks">
         <ul>
             <li>
-                <Link to="/portfolio"><p>&gt;</p>Home</Link>
+                <Link name="Home"/>
             </li>
             <li>
-                <Link to='/portfolio/projects'><p>&gt;</p>Projects</Link>
+                <Link name="Projects"/>
             </li>
-            <li className="li-Switch">
-                <div className="Switch"><Switch theme={theme} setTheme={setTheme} switchId={switchId}/></div>
+            <li>
+                <Link name="Contact"/>
             </li>
         </ul>
         </nav>

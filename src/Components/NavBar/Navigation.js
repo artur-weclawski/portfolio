@@ -1,11 +1,13 @@
 import NavLinks from "./NavLinks";
-const Navigation = ({theme, setTheme}) =>{
+import { BiTerminal } from "react-icons/bi";
+
+const Navigation = () =>{
     return(
       <div className='Navigation'>
         <div  className='Navigation-icon'>
-          <a href='/portfolio' ><i className="gg-terminal" ></i></a>
+          <a href='/portfolio' ><BiTerminal /></a>
         </div>
-        <NavLinks theme={theme} setTheme={setTheme} switchId="navigation-switch"/>
+        <NavLinks />
       </div>
     );
 }

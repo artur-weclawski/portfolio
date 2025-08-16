@@ -1,0 +1,70 @@
+.info{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 500px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.info .description{ 
+  grid-area: 1 / 2 / 2 / 4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 48px;
+}
+
+.info .description::before{
+  content: '';
+  width: 3px;
+  height: 474px;
+  position: absolute;
+  left: 0;
+  bottom:0;
+  background-color: var(--background-color-light-2);
+  animation: flicker-box 3s infinite;
+}
+
+.info .description h1{
+  font-family: 'JetBrains Mono', normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.info .description p{
+  font-family: 'JetBrains Mono', normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.links{
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    grid-auto-flow: column;
+    margin-top: auto;
+}
+.links .BsGithub, .links .FaLinkedin, .links .SiMaildotru, .links .BsFileEarmarkPerson{
+  color: var(--text-color);
+  width: 60px;
+  height: 60px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .info{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 1000px;
+    }
+    .info .neon-box{
+      grid-area: 1 / 1 / 2 / 1;
+    }
+
+    .info .description{ 
+      grid-area: 2 / 1 / -1 / 1;
+      margin: 0px 40px;
+    }
+
+}

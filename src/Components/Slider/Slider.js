@@ -1,53 +1,51 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import "./Slider.css"
 const Slider = ({ slides }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const goToPrevious = () =>{
-        const isFirstSlide = currentIndex === 0;
-        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-        setCurrentIndex(newIndex);
-    }
-
-    const goToNext = () =>{
-        const isLastSlide = currentIndex === slides.length - 1;
-        const newIndex = isLastSlide ? 0 : currentIndex + 1;
-        setCurrentIndex(newIndex);
-    }
-
     const goToSlide = (slideIndex) =>{
         setCurrentIndex(slideIndex);
     }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex(prevIndex => 
+                prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+            );
+        }, 20000);
+        return () => clearInterval(interval);
+    }, [slides.length]);
+
     return(
-        <div className="sliderContainer">
-            <div className="leftArrow" onClick={goToPrevious}> &lt; </div>
-            <div className="rightArrow" onClick={goToNext}> &gt; </div>
-            <div className="slide">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <div className="content">
-                    <img src={[slides[currentIndex].image]} alt=""/>
-                    <div className="description">
-                        <h2>
-                            {slides[currentIndex].title}
-                        </h2>
-                        <p>
-                            {slides[currentIndex].description}
-                        </p>
+        <div className="slider">
+            <div className="sliderContainer">
+                <div className="slide">
+                    <div className="content">
+                        {slides.map((slide, index) => (
+                                <img
+                                  key={index}
+                                  src={slide.image}
+                                  alt=""
+                                  className={index === currentIndex ? "active" : ""}
+                                />
+                        ))}
+                        <div className="description">
+                            <h1>
+                                {slides[currentIndex].title}
+                            </h1>
+                            <div className="index-container">
+                                {slides.map((slide, slideIndex)=>(
+                                    <div 
+                                      key = {slideIndex} 
+                                      className={`index ${slideIndex === currentIndex ? 'active' : ''}`} 
+                                      onClick={()=>goToSlide(slideIndex)}>
+                                      0{slideIndex+1}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div className="dotsContainer">
-                {slides.map((slide, slideIndex)=>(
-                    <div 
-                            key = {slideIndex} 
-                            className={`dots ${slideIndex === currentIndex ? 'active' : ''}`} 
-                            onClick={()=>goToSlide(slideIndex)}>.
-                    </div>
-                ))}
             </div>
         </div>
     )
