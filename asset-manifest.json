@@ -1,16 +1,34 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.01c8b064.css",
-    "main.js": "/portfolio/static/js/main.9b6b9da7.js",
-    "static/media/yeet_home_page.png": "/portfolio/static/media/yeet_home_page.3f4b64b409034d54d20c.png",
+    "main.css": "/portfolio/static/css/main.53c3a806.css",
+    "main.js": "/portfolio/static/js/main.a77d8d4a.js",
+    "static/media/top_background.png": "/portfolio/static/media/top_background.6fad0b5fe997a8b04a94.png",
+    "static/media/bottom_background.png": "/portfolio/static/media/bottom_background.765940b1c039b7b43129.png",
+    "static/media/JetBrainsMono-BoldItalic.woff2": "/portfolio/static/media/JetBrainsMono-BoldItalic.c8aab241a20a44900acc.woff2",
+    "static/media/JetBrainsMono-SemiBoldItalic.woff2": "/portfolio/static/media/JetBrainsMono-SemiBoldItalic.c806f3da5871fdfeeb65.woff2",
+    "static/media/JetBrainsMono-MediumItalic.woff2": "/portfolio/static/media/JetBrainsMono-MediumItalic.cbdbf29e8995bf6c5b78.woff2",
+    "static/media/JetBrainsMono-LightItalic.woff2": "/portfolio/static/media/JetBrainsMono-LightItalic.36356cc14018801b1ff5.woff2",
+    "static/media/JetBrainsMono-ExtraBoldItalic.woff2": "/portfolio/static/media/JetBrainsMono-ExtraBoldItalic.91252e8b707afdd17072.woff2",
+    "static/media/JetBrainsMono-Italic.woff2": "/portfolio/static/media/JetBrainsMono-Italic.6fd32a4a78fbf9eb0d3a.woff2",
+    "static/media/JetBrainsMono-ExtraLightItalic.woff2": "/portfolio/static/media/JetBrainsMono-ExtraLightItalic.3c551d3b2909c82229dd.woff2",
+    "static/media/JetBrainsMono-Bold.woff2": "/portfolio/static/media/JetBrainsMono-Bold.75885bf04057d4697ae5.woff2",
+    "static/media/JetBrainsMono-SemiBold.woff2": "/portfolio/static/media/JetBrainsMono-SemiBold.e25ac98086382ececc5d.woff2",
+    "static/media/JetBrainsMono-ThinItalic.woff2": "/portfolio/static/media/JetBrainsMono-ThinItalic.544a1b630c15e74cb742.woff2",
+    "static/media/JetBrainsMono-Light.woff2": "/portfolio/static/media/JetBrainsMono-Light.9427af7e275ab9f115cf.woff2",
+    "static/media/JetBrainsMono-Medium.woff2": "/portfolio/static/media/JetBrainsMono-Medium.065ee491488865d52b60.woff2",
+    "static/media/JetBrainsMono-ExtraBold.woff2": "/portfolio/static/media/JetBrainsMono-ExtraBold.db311a06095e69d7ec53.woff2",
+    "static/media/better-meta-chat.png": "/portfolio/static/media/better-meta-chat.dd7aae2d24bf419d28cc.png",
+    "static/media/JetBrainsMono-ExtraLight.woff2": "/portfolio/static/media/JetBrainsMono-ExtraLight.df1dd19af7a2c38698fa.woff2",
+    "static/media/JetBrainsMono-Regular.woff2": "/portfolio/static/media/JetBrainsMono-Regular.1d9e47ce7f6576ce7bae.woff2",
+    "static/media/JetBrainsMono-Thin.woff2": "/portfolio/static/media/JetBrainsMono-Thin.659df8a75626797e673b.woff2",
     "static/media/unconquered_fortress_menu.png": "/portfolio/static/media/unconquered_fortress_menu.cc2eafeaa871227c61ab.png",
     "static/media/Artur_Weclawski_CV.pdf": "/portfolio/static/media/Artur_Weclawski_CV.fd995aa25bbcd177d78a.pdf",
     "index.html": "/portfolio/index.html",
-    "main.01c8b064.css.map": "/portfolio/static/css/main.01c8b064.css.map",
-    "main.9b6b9da7.js.map": "/portfolio/static/js/main.9b6b9da7.js.map"
+    "main.53c3a806.css.map": "/portfolio/static/css/main.53c3a806.css.map",
+    "main.a77d8d4a.js.map": "/portfolio/static/js/main.a77d8d4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.01c8b064.css",
-    "static/js/main.9b6b9da7.js"
+    "static/css/main.53c3a806.css",
+    "static/js/main.a77d8d4a.js"
   ]
 }
