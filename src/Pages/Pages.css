@@ -43,24 +43,6 @@
     background-color: var(--background-color-dark-4);
     -webkit-mask: linear-gradient(white, transparent 95%);;
     mask: linear-gradient(white, transparent 95%);
-    /* transform-origin: bottom;
-    animation: change-opacity-1 linear forwards;
-    animation-timeline: view();
-    animation-range: exit; */
-    opacity: 1;
-}
-
-@keyframes change-opacity-1{
-  0%
-    {
-      opacity: 1;
-    }
-  50%, 100%
-    {
-      opacity: 0;
-      scale: 1.2;
-    }
-
 }
 
 .bot-background {
@@ -71,28 +53,6 @@
     height: var(--projects-height);
     -webkit-mask: linear-gradient(white, transparent 95%);;
     mask: linear-gradient(transparent 5%, var(--background-color-dark-4));
-    /* transform-origin: top;
-    animation: change-opacity-2 linear forwards;
-    animation-timeline: view();
-    animation-range: start;
-    scale: 2; */
-    scale: 1;
-}
-
-@keyframes change-opacity-2{
-  0% {
-    opacity: 0
-  }
-  50%{
-    opacity: 1;
-    scale: 1;
-    mask: linear-gradient(transparent 0%, var(--background-color-dark-4));
-  }
-  100% {
-    opacity: 1;
-    scale: 1;
-    mask: none;
-  }
 }
 
 @media only screen and (min-height: 1920px){
