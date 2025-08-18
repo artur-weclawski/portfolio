@@ -2,7 +2,7 @@ import "./Contact.css";
 import { SiMaildotru } from "react-icons/si";
 import { BsGithub, BsFileEarmarkPerson} from "react-icons/bs"
 import { FaLinkedin } from "react-icons/fa";
-import pdf from "../Artur_Weclawski_CV.pdf";
+import pdf from "../resume_eng_pl.pdf";
 const Contact = () => {
     return (
         <div className='contact'id='contact'>
