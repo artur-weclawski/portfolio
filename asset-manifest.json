@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.62630338.css",
-    "main.js": "/portfolio/static/js/main.89824485.js",
+    "main.js": "/portfolio/static/js/main.cf958391.js",
     "static/media/top_background.png": "/portfolio/static/media/top_background.6fad0b5fe997a8b04a94.png",
     "static/media/bottom_background.png": "/portfolio/static/media/bottom_background.765940b1c039b7b43129.png",
+    "static/media/resume_eng_pl.pdf": "/portfolio/static/media/resume_eng_pl.825931c503d0ba6d589e.pdf",
     "static/media/JetBrainsMono-BoldItalic.woff2": "/portfolio/static/media/JetBrainsMono-BoldItalic.c8aab241a20a44900acc.woff2",
     "static/media/JetBrainsMono-SemiBoldItalic.woff2": "/portfolio/static/media/JetBrainsMono-SemiBoldItalic.c806f3da5871fdfeeb65.woff2",
     "static/media/JetBrainsMono-MediumItalic.woff2": "/portfolio/static/media/JetBrainsMono-MediumItalic.cbdbf29e8995bf6c5b78.woff2",
@@ -22,13 +23,12 @@
     "static/media/JetBrainsMono-Regular.woff2": "/portfolio/static/media/JetBrainsMono-Regular.1d9e47ce7f6576ce7bae.woff2",
     "static/media/JetBrainsMono-Thin.woff2": "/portfolio/static/media/JetBrainsMono-Thin.659df8a75626797e673b.woff2",
     "static/media/unconquered_fortress_menu.png": "/portfolio/static/media/unconquered_fortress_menu.cc2eafeaa871227c61ab.png",
-    "static/media/Artur_Weclawski_CV.pdf": "/portfolio/static/media/Artur_Weclawski_CV.fd995aa25bbcd177d78a.pdf",
     "index.html": "/portfolio/index.html",
     "main.62630338.css.map": "/portfolio/static/css/main.62630338.css.map",
-    "main.89824485.js.map": "/portfolio/static/js/main.89824485.js.map"
+    "main.cf958391.js.map": "/portfolio/static/js/main.cf958391.js.map"
   },
   "entrypoints": [
     "static/css/main.62630338.css",
-    "static/js/main.89824485.js"
+    "static/js/main.cf958391.js"
   ]
 }
